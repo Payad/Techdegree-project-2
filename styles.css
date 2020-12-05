@@ -222,6 +222,7 @@ h2 {
         padding-left: 1em;
         margin-bottom: 200px;
         font-size: 20px;
+        text-align: left;
     } 
    
     .bottomlist {
@@ -240,6 +241,27 @@ h2 {
 
 @media (min-width: 1024px) {
 
+    .main-nav {
+        text-align: right;
+
+    }
+
+    .name {
+        float: left;
+        
+    }
+
+    li.list {
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: 36px;
+    }
+    .main-title {
+         text-align: center;
+         margin-left: 39%;
+        
+    }
+
     .container {
         width: 80%;
         margin: 0 auto;
@@ -252,11 +274,22 @@ h2 {
 
     #bank1 {
         width: 30%;
+        margin-left: 40px;
     }
+
     #bank2 {
-        width: 40%;
-    }
+        width: 30%;
+    } 
+
     #bank3 {
         width: 30%;
-    }
-}
+    } 
+
+     /* img {
+        max-width: 97%;
+        box-sizing: border-box;
+        display: block;
+        margin: auto;  
+        
+    }  */ 
+}  
