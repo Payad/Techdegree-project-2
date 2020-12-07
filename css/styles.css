@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+.cursive {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
 html, 
 body {
     height: 100%;
@@ -45,7 +50,7 @@ a {
     font-size: 30px;    
 }
 
-/* change profile pic to fit header */
+
 .profilepic {
     width: 70%;
     display: block;
@@ -55,6 +60,7 @@ a {
 
 .main-title {
     margin-bottom: 50px;
+    margin-top: 80px;
 }
 
 img {
@@ -135,10 +141,6 @@ h2 {
     text-align: right;
 }
 
-/* li {
-    display: inline-block;
-    margin-right: 20px;
-} */
 
 .top, .footer-nav li:last-child {
     margin-right: 0;
@@ -179,14 +181,13 @@ h2 {
 
     .bank1,
     .bank2 {
-        width: 50%;
-        
-    }
+        width: 50%;  
 
-    
+    }
 
     .name {
         text-align: center;
+
     }
 
     .list {
@@ -194,19 +195,13 @@ h2 {
         margin-right: 30px;
         margin-left: 30px;
     }
-    
-    
-    div {
-        max-width: 80%;
-    }
-
+        
+   
     .profilepic {
         float: right;
-        margin-right: -150px;
-        margin-bottom: 100px;
-        margin-left: 5px;
         max-width: 40%;
-        padding-right: 10px;
+        padding-right: 40px;
+       
     }
 
     img {
@@ -223,6 +218,8 @@ h2 {
         margin-bottom: 200px;
         font-size: 20px;
         text-align: left;
+        margin-bottom: 0px;
+        width: 60%;
     } 
    
     .bottomlist {
@@ -241,6 +238,36 @@ h2 {
 
 @media (min-width: 1024px) {
 
+    header {
+        margin-bottom: 100px;
+    }
+
+.firstparagragh {
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0px;
+    width: 80%;
+}
+
+div {
+    max-width: 90%;
+}
+
+
+    .profilepic {
+        max-width: 50%;
+        padding-right: 40px;
+        margin-right: -145px;
+    
+
+}
+
+footer {
+    width: 104%
+}
+
     .main-nav {
         text-align: right;
 
@@ -258,25 +285,32 @@ h2 {
     }
     .main-title {
          text-align: center;
-         margin-left: 39%;
+         margin-top: 150px;
+         margin-right: -40px;
+       
         
     }
 
     .container {
-        max-width: 120%;
+       
         margin: 0 auto;
-        width: 105%;
-        margin-left: 25px;
+        margin-left: 65px;
+       
     }
+
+    
     
     .col {
         float: left;
-        width: 30%;
-        margin: 2px;
+        width: 33.33%;
     }
 
-    .profilepic {
-        margin:
+    .clearfix::after {
+        content:"";
+        display: table;
+        clear: both;
     }
+   
+}   
 
 }  

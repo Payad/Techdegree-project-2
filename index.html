@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- use font-family: 'Bebas Neue', cursive; -->
 <!-- use font-family: 'texturina, serif' for css rules to specify families -->
 <link rel="stylesheet" href="styles.css"/>
 <title>Responsive Layout</title>
@@ -14,19 +17,20 @@
         <nav class="main-nav">
         <ul class="nav">
             <li class="name"><strong>Peter Ayad</strong></li>
-        <li class="list"><a href="index.html"><strong>HOME</strong></a></li>
-        <li class="list"><strong>PORTFOLIO</strong></li>
-        <li class="list"><strong>CONTACT</strong></li>
+        <li class="list" id="home"><a href="index.html"><strong>HOME</strong></a></li>
+        <li class="list" id="portfolio"><a href="#portfolio"><strong>PORTFOLIO</strong></a></li>
+        <li class="list" id="contact"><a href="#contact"><strong>CONTACT</strong></a></li>
         </ul>
         </nav>
-        <div>
+        <div class="clearfix">
         <img class="profilepic" src="images/responsive-layout-profile.png">
         <p class="firstparagraph">Hi I'm a front-end web developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div>
     </header>
 
-    <h5 class="main-title">PORTFOLIO</h5>
+    <h5 class="main-title" id="portfolio">PORTFOLIO</h5>
     
+    <!-- <div class="cont"> -->
     <div class="container clearfix">
     <div class="bank1 col" id="bank1">
     <img src="images/portfolio-1.png">
@@ -63,11 +67,35 @@
     <h3>Calculator</h3>
     <p class="paragraph">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
     </div>
+
+    <div class="bank1 col" id="bank1">
+    <img src="images/rsz_skills_1.jpg">   
+    <h3>Skills</h3>
+    <p>All the skills that I have gained through out my life, you can find that these skills are very impressive.</p>
     </div>
 
-    <h5 class="contact"><strong>CONTACT</strong></h5>
+    <div class="bank2 col" id="bank2">
+    <img src="images/rsz_collection-of-hobby-icons.jpg"> 
+    <h3>Hobbies</h3>
+    <p>Hello this section describes my Hobbies, including surfing, hiking, and the beach! feel free to read if your interested.</p>   
+    </div>
 
-    <p>If your interested in chatting or want more information about what I have been working on, I'd love to hear from you!</p>
+    <div class="bank1 col" id="bank3">
+    <img src="images/rsz_find-out-more.jpg">
+    <h3>Find Out More!</h3>
+    <p>To Learn more... please visit Peter's profile page, You can also send an email if you have any questions! </p>
+    </div>
+
+    <!-- <div class>
+
+    </div> -->
+    </div>
+    <!-- </div> -->
+    
+
+    <h5 class="contact" id="contact"><strong>CONTACT</strong></h5>
+
+    <p class="cursive">If your interested in chatting or want more information about what I have been working on, I'd love to hear from you!</p>
     <p>Phone: 123-456-7890</p>
     <p>Email blank@yahoo.com</p>
 
