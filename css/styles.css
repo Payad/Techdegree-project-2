@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+a:hover {
+   background-color: black;
+}
+
 .cursive {
     font-family: 'Bebas Neue', cursive;
     color: white;
@@ -166,6 +170,7 @@ h2 {
     }
     
     .col {
+        min-height: 420px;
         float: left;   
     }
 
@@ -238,6 +243,15 @@ h2 {
 
 @media (min-width: 1024px) {
 
+
+header>div {
+    margin: 0 auto;
+}
+
+.profilepic {
+    float: right;
+}
+
     header {
         margin-bottom: 100px;
     }
@@ -256,17 +270,17 @@ div {
 }
 
 
-    .profilepic {
+    /* .profilepic {
         max-width: 50%;
         padding-right: 40px;
         margin-right: -145px;
     
 
-}
+} */
 
-footer {
+/* footer {
     width: 104%
-}
+} */
 
     .main-nav {
         text-align: right;
@@ -283,13 +297,13 @@ footer {
         margin-right: 5px;
         margin-top: 36px;
     }
-    .main-title {
+    /* .main-title {
          text-align: center;
          margin-top: 150px;
          margin-right: -40px;
        
         
-    }
+    } */
 
     .container {
        
@@ -313,4 +327,4 @@ footer {
    
 }   
 
-}  
+  
